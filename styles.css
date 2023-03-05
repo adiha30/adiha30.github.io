@@ -1,0 +1,105 @@
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+        font-size: 50px;
+        font: "Halvetica", sans-serif;
+        text-align: center;
+        margin-bottom: 15px;
+}
+
+.box {
+        padding-top: 30px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        position: relative;
+}
+
+.section-title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+}
+
+#chicken-title {
+        background-color: pink;
+}
+
+#beef-title {
+        background-color: indianred;
+}
+
+#sushi-title {
+        background-color: lightyellow;
+}
+
+p {
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+  }
+  .col-lg-4:last-child {
+        margin-right: 0;
+  }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 45%;
+    float: left;
+    border: 1px solid black;
+  }
+
+  .col-md-12 {
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+    border: 1px solid black;
+  }
+}
+
+/********** Mobile View **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+    border: 1px solid black;
+  }
+}
