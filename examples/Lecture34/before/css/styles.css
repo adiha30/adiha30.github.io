@@ -85,7 +85,12 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  .jumborton {
+    background: url('../images/jumborton_1200.jpg') no-repeat;
+    height: 675px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
 }
 
 /********** Medium devices only **********/
