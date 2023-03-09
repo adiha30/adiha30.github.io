@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.navbar.hidden {
+  opacity: 0;
+}
+
+div ul {
+  background-color: #D3D3D3;
+}
+
+.mylist li {
+  border: 1px solid #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: red;
+}
+
+#chicken-dish, #beef-dish, #sushi-dish {
+  height: 600px;
+  background-color: #D3D3D3;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 15px 20px;
+}
+.container {
+  padding: 15px 15px;
+  margin: 15px
+}
+div h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+div p {
+  font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 5px;
+    margin: 10px;
+  }
+}
