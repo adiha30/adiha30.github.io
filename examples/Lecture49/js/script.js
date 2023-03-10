@@ -1,6 +1,5 @@
-// Object literals and "this"
 var literalCircle = {
-  radius: 10,
+  radius:10,
 
   getArea: function () {
     var self = this;
@@ -12,11 +11,8 @@ var literalCircle = {
     increaseRadius();
     console.log(this.radius);
 
-    return Math.PI * Math.pow(this.radius, 2);
+    return Math.PI * Math.pow(this.radius,2);
   }
 };
 
 console.log(literalCircle.getArea());
-
-
-

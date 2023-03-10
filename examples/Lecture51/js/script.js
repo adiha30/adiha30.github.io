@@ -1,11 +1,11 @@
 // Closures
-function makeMultiplier (multiplier) {
+function makeMultiplier(multiplier) {
   // var multiplier = 2;
+
   function b() {
-    console.log("Multiplier is: " + multiplier);
+    console.log("multiplier is: " + multiplier);
   }
   b();
-
 
   return (
       function (x) {
@@ -16,4 +16,4 @@ function makeMultiplier (multiplier) {
 }
 
 var doubleAll = makeMultiplier(2);
-console.log(doubleAll(10)); // its own exec env
+console.log(doubleAll(10));
